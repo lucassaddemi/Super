@@ -1,0 +1,255 @@
+/* Reseteo básico de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Encabezado */
+header {
+    background-color: #3a7e44;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f0d264;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sección Inicio */
+#inicio {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#inicio h1 {
+    color: #3a7e44;
+    font-size: 2.5em;
+}
+
+#inicio p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Sección Ofertas de la Semana */
+#ofertas {
+    margin-bottom: 40px;
+}
+
+#ofertas h2 {
+    color: #3a7e44;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galeria-ofertas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.galeria-ofertas article {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.galeria-ofertas article img {
+    border-radius: 8px;
+}
+
+.galeria-ofertas article h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+    color: #3a7e44;
+}
+
+.galeria-ofertas article p {
+    font-size: 1em;
+}
+
+/* Sección Nosotros */
+#nosotros {
+    background-color: #3a7e44;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#nosotros h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#nosotros p {
+    font-size: 1.2em;
+}
+
+/* Sección Compra Digital */
+#compra-digital {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#compra-digital h2 {
+    font-size: 2em;
+    color: #3a7e44;
+    margin-bottom: 20px;
+}
+
+#compra-digital p {
+    font-size: 1.2em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #3a7e44;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.boton:hover {
+    background-color: #f0d264;
+    color: #333;
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: white;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    color: #3a7e44;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3a7e44;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #f0d264;
+    color: #333;
+}
+
+/* Pie de página */
+footer {
+    background-color: #3a7e44;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .redes-sociales a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .redes-sociales a:hover {
+    color: #f0d264;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .galeria-ofertas {
+        flex-direction: column;
+    }
+
+    .galeria-ofertas article {
+        width: 100%;
+    }
+}
